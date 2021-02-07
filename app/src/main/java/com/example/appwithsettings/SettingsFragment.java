@@ -13,23 +13,10 @@ import android.widget.TextView;
 
 public class SettingsFragment extends PreferenceFragmentCompat {
 
-
-    public SettingsFragment() {
-        // Required empty public constructor
-    }
-
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
 
-    }
+        setPreferencesFromResource(R.xml.preferences, rootKey);
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-
-        TextView textView = new TextView(getActivity());
-        textView.setText(R.string.hello_blank_fragment);
-
-        return textView;
     }
 }
